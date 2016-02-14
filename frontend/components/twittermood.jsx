@@ -105,6 +105,7 @@ var TwitterMood = React.createClass({
   },
 
   getTweets: function() {
+    this.counter = 0;
     ApiUtil.fetchTwitter(this.state.inputVal);
   },
   apiCall: function(tweet, idx, tweets) {
